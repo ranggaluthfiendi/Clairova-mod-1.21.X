@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "clairova",
+	"version": "${version}",
+	"name": "Clairova",
+	"description": "First mod created by Rang",
+	"authors": [
+		"Rang"
+	],
+	"contact": {
+		"homepage": "https://rangga-luthfiendi.web.app/",
+		"sources": "https://github.com/ranggaluthfiendi/Clairova-mod-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/clairova/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.rang.clairova.Clairova"
+		],
+		"fabric-datagen": [
+			"net.rang.clairova.ClairovaDataGenerator"
+		],
+        "client": [
+            "net.rang.clairova.ClairovaClient"
+        ]
+	},
+	"mixins": [
+		"clairova.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
